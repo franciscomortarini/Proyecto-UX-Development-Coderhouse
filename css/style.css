@@ -22,25 +22,25 @@ body {
     text-align: right;
     padding: 30px 50px 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
+    color: #ffffff;
     font-weight: 500;
     font-size: 16px;
     margin-right: 10px;
 }
 
-.a {
+a {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight: 500;
 font-size: 16px;
-color: #fff;
-text-decoration: none!important;
+color: #ffffff;
+text-decoration: none !important;
 }
 
 .nav-item {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 nav > a:hover {
-    text-decoration: underline!important;
+    text-decoration: underline !important;
 }
 
 .navbar {
@@ -55,7 +55,11 @@ nav > a:hover {
     margin-right: 20px;
 }
 
+.nav-slide{
 
+    transition: transform 0.75s ease-out;
+    transform: translateY(-100%)
+}
 .menu-btn {
     position: relative;
     display: flex;
@@ -71,7 +75,7 @@ nav > a:hover {
 .menu-btn__burger {
     width: 50px;
     height: 6px;
-    background: #fff;
+    background: #ffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -84,7 +88,7 @@ nav > a:hover {
     position: absolute;
     width: 50px;
     height_: 6px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;

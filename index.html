@@ -24,16 +24,21 @@
       Ventus
         </a>
 <button 
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbarNav"
-class="navbar-toggler"
-aria-controls="navbarNav"
-aria-expanded="false"
-aria-label="Toggle navigation"
+ type="button"
+ data-bs-toggle="collapse"
+ data-bs-target="#navbarNav"
+ class="navbar-toggler"
+ aria-controls="navbarNav"
+ aria-expanded="false"
+ aria-label="Toggle navigation"
 >
+</button>
 <span class="navbar-toggler-icon"></span>
-</button>   
+<!--
+  No encuentro la forma de realizar hacer los hipervínculos a las demás páginas en el nav sin que el texto ignore completamente el css y se mantenga azul y subrayado. 
+  Intenté usar text-decoration none pero no sirve, al igual que la forma !important. 
+  No entiendo cuál es el error en el código y les pido ayuda con esto. ¿De qué me estoy olvidando?
+-->
 <div 
       class="collapse navbar-collapse"
       id="navbarNav">
@@ -75,11 +80,7 @@ aria-label="Toggle navigation"
         btn-primary">Buscar</button>
       </form>
     </header>
-    <!--
-      En el inicio tendría que aparecer una lista de solo 4 productos en estreno
-       que asumo usarían algún tipo de algoritmo que requiera programación 
-       para mostrar cúales son de todo el catálogo.
-    -->
+   
     <main>
       <h1>Ventus</h1>
       <h2>Nuevos Estrenos</h2>
