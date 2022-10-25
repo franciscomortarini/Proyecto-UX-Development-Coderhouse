@@ -1,3 +1,11 @@
+@import "fuentes" ;
+@import "variables" ;
+@import "mixins" ;
+@import "reset" ;
+@import "header";
+@import "main_index";
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,10 +16,10 @@
 
 body {
     margin: 0;
-    background: rgb(180,58,58);
-    background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(252,117,44,1) 51%, rgba(252,176,69,1) 100%); 
+    background: $color-primario;
+    background: $color-secundario; 
     text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:l, $tipografia-general ;
     text-decoration: none;
 }
 
@@ -62,7 +70,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 8px;
-    color: #fff;
+    color: $color-blanco;
     opacity: 0;
 }
 
@@ -82,7 +90,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: $color-blanco;
     padding: 11px;
     border-radius: 5px;
     font-size: 14px;
@@ -143,7 +151,7 @@ body {
 .card:hover{
 
     transform: scale(1.04);
-    z-index: 2;
+    z-index: 999;
     overflow: hidden;
 }
 .nav{
@@ -152,7 +160,7 @@ body {
     text-align: right;
     padding: 30px 50px 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    color: $color-blanco;
     font-weight: 500;
     font-size: 16px;
     margin-right: 10px;
@@ -162,7 +170,7 @@ a {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-weight: 500;
 font-size: 16px;
-color: #ffffff;
+color: $color-blanco;
 text-decoration: none !important;
 }
 
@@ -177,7 +185,7 @@ nav > a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: $color-negro;
 }
 
 .nav ul{
@@ -199,29 +207,34 @@ nav > a:hover {
     height: 80px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    position:relative;
+    z-index:999;
     /*border: 3px solid #fff;*/
 }
 
 .menu-btn__burger {
     width: 50px;
     height: 6px;
-    background: #ffff;
+    background: $color-blanco;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
-
+    z-index:999;
+    position: relative;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
 
     content:'';
-    position: absolute;
+    position: relative;
     width: 50px;
     height_: 6px;
-    background: #ffffff;
+    background: $color-blanco;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
+    position:relative;
+    z-index:999;
 
 }
 .menu-btn__burger::before {
@@ -229,6 +242,8 @@ nav > a:hover {
 }
 .menu-btn__burger::after{
     transform: translateY(16px);
+    z-index:999;
+    position: relative;
 }
 
 /* Animación */
@@ -236,22 +251,34 @@ nav > a:hover {
     transform:translateX(-50px);
     background: transparent;
     box-shadow: none;
+    position:relative;
+    z-index:999;
 }
 .menu-btn.open .menu-btn__burger::before {
     transform: rotate(45deg) translate(35px, -35px);
+    position:relative;
+    z-index:1;
 }
 
 .menu-btn.open .menu-btn__burger::after {
     transform: rotate(-45deg) translate(35px, -35px);
+    position:relative;
+    z-index:1;
 }
 /*Fin de animación*/
 
+.menu-open .top-nav-burger {
+    display: none;
+    position:relative;
+    z-index:999;
+  }
+
 h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
+    color: $color-blanco;
 }
 
 h2 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #fff;
+    color: $color-blanco;
     background: rgb(187, 156, 138);
 }
 
@@ -314,7 +341,7 @@ header .textos-header{
 
 .container h2{
 background: #727171;
-color:#fff;
+color:$color-blanco;
 width:200px;
 font-size:20px;
 padding:5px;
@@ -342,11 +369,11 @@ box-shadow: 0 12px 16px rgba(0, 0, 0, 2)
 
 
 .product-list {
-    background-color: rgb(255, 255, 255);
+    background-color: $color-blanco;
 padding: 5em;}
 
 .product-list .card {
-background-color: #fff;
+background-color: $color-blanco;
 border-radius: 10px;
 padding: 5em;
 box-shadow: 0px 10px 5px #b2bec3;
