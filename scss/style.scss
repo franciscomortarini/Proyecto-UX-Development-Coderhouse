@@ -1,11 +1,32 @@
 @import "fuentes" ;
 @import "variables" ;
 @import "mixins" ;
+
+@mixin nombreMixin (){
+    background: black;
+}
+header{
+    @include nombreMixin(); 
+}
+
+@mixin otroMixin{
+    background: black;
+}
+header{
+    @include otroMixin; 
+}
+
 @import "reset" ;
 @import "header";
 @import "main_index";
 
+main{
+    background: radial-gradient(circle, rgba(255,248,239,0.3254435563287815) 0%, rgba(255,242,230,1) 9%, rgba(244,209,183,1) 56%);;
+}
 
+p{
+    background:rgb(215, 179, 158);
+}
 *{
     padding: 0;
     margin: 0;
@@ -21,6 +42,7 @@ body {
     text-align: center;
     font-family:l, $tipografia-general ;
     text-decoration: none;
+    background:radial-gradient(circle, rgba(255,248,239,0.3254435563287815) 0%, rgba(255,242,230,1) 9%, rgba(244,209,183,1) 56%);
 }
 
 
@@ -340,7 +362,7 @@ header .textos-header{
 }
 
 .container h2{
-background: #727171;
+background: rgb(187, 156, 138);
 color:$color-blanco;
 width:200px;
 font-size:20px;
@@ -383,6 +405,6 @@ text-align: center;
 
 
 footer{
-    background-color: rgb(158, 114, 80);
+    background-color: rgb(134, 113, 100);
 }
   
