@@ -28,12 +28,17 @@ El sitio web cuenta con varias páginas con listados de productos, animaciones, 
 
 
 ## Capturas de pantalla
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![1](https://user-images.githubusercontent.com/113878525/198366784-83004bc2-fe1b-48eb-aedb-6b3ca61faf15.png)
+![2](https://user-images.githubusercontent.com/113878525/198366803-142265cb-6a91-4f2f-9e96-b59b41cd5f78.png)
+![3](https://user-images.githubusercontent.com/113878525/198366831-75417c0e-2348-4bf3-bfad-5686495d6c23.png)
+![4](https://user-images.githubusercontent.com/113878525/198366854-62699b88-7547-461f-b385-0016fa8a1166.png)
+![5](https://user-images.githubusercontent.com/113878525/198366865-9711ff57-4359-4f94-867c-0bf13b0cac0e.png)
+![6](https://user-images.githubusercontent.com/113878525/198366873-33c83b75-d24a-48e5-8a3a-916148724e4d.png)
+
 
 
 ## Estado del proyecto
-A día de hoy (26/10) el proyecto está incompleto. Me hace falta completar SASS como corresponde con sus mixins, variables, así como también optimizar el tamaño del proyecto, acomodar la estética del mismo y demás.
+A día de hoy (27/10)  me falta optimizar el tamaño del proyecto.
 
 
 ## A mejorar
