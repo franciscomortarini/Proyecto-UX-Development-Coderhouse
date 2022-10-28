@@ -1,0 +1,16 @@
+//Filas y columnas//
+
+.column {
+    float: left ;
+    width: 33.33% ;
+    padding: 5px ;
+}
+
+.row{
+    margin-top:30px ;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
