@@ -1,0 +1,120 @@
+//Barra de navegación y menú hamburguesa//
+
+.nav{
+    height:80px ;
+    width: 100% ;
+    text-align: right ;
+    padding: 30px 50px 0 0 ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: $color-blanco ;
+    font-weight: 500 ;
+    font-size: 16px ;
+    margin-right: 10px ;
+}
+
+a {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+font-weight: 500 ;
+font-size: 16px ;
+color: $color-blanco ;
+text-decoration: none !important ;
+}
+
+.nav-item {
+    text-decoration: none !important ;
+}
+nav > a:hover {
+    text-decoration: underline !important ;
+}
+
+.navbar {
+    display: flex ;
+    justify-content: space-between ;
+    align-items: center ;
+    color: $color-negro ;
+}
+
+.nav ul{
+    float:right ;
+    margin-right: 20px ;
+}
+
+.nav-slide{
+
+    transition: transform 0.75s ease-out ;
+    transform: translateY(-100%) ;
+}
+.menu-btn {
+    position: relative ;
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    width: 80px ;
+    height: 80px ;
+    cursor: pointer ;
+    transition: all .5s ease-in-out ;
+    position:relative ;
+    z-index:999 ;
+}
+
+.menu-btn__burger {
+    width: 50px ;
+    height: 6px ;
+    background: $color-blanco ;
+    border-radius: 5px ;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2) ;
+    transition: all .5s ease-in-out ;
+    z-index:999 ;
+    position: relative ;
+}
+.menu-btn__burger::before,
+
+.menu-btn__burger::after {
+
+    content:'';
+    position: relative ;
+    width: 50px ;
+    height: 6px ;
+    background: $color-blanco;
+    border-radius: 5px ;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2) ;
+    transition: all .5s ease-in-out ;
+    position:relative ;
+    z-index:999 ;
+
+}
+.menu-btn__burger::before {
+    transform: translateY(-16px) ;
+}
+.menu-btn__burger::after{
+    transform: translateY(16px) ;
+    z-index:999 ;
+    position: relative ;
+}
+
+/* Animación */
+.menu-btn.open .menu-btn__burger {
+    transform:translateX(-50px);
+    background: transparent ;
+    box-shadow: none ;
+    position:relative ;
+    z-index:999 ;
+}
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px) ;
+    position:relative ;
+    z-index:1 ;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, -35px) ;
+    position:relative ;
+    z-index:1 ;
+}
+/*Fin de animación*/
+
+.menu-open .top-nav-burger {
+    display: none ;
+    position:relative ;
+    z-index:999 ;
+  }

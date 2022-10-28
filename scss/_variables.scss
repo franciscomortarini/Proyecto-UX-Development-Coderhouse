@@ -1,17 +1,19 @@
-$color-primario:rgb(180,58,58);
-$color-secundario:linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(252,117,44,1) 51%, rgba(252,176,69,1) 100%);
-$color-texto:black;
-$color-blanco: white;
-$color-negro:black;
+//Variables//
 
-$espaciado-estandar:1rem;
-$espaciado-doble:20px;
+$color-primario:rgb(180,58,58) ;
+$color-secundario:linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(252,117,44,1) 51%, rgba(252,176,69,1) 100%) ;
+$color-texto:black ;
+$color-blanco: white ;
+$color-negro:black ;
 
-$fuente-normal:1em;
-$fuente-pequena:0.8em;
-$fuente-grande:1.4em;
+$espaciado-estandar:1rem ;
+$espaciado-doble:20px ;
 
-$tipografia-general:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-$tipografia-alternativa:'Times New Roman''Serif'
+$fuente-normal:1em ;
+$fuente-pequena:0.8em ;
+$fuente-grande:1.4em ;
 
-$centrado:center;
+$tipografia-general:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+$tipografia-alternativa:'Times New Roman''Serif' ;
+
+$centrado:center ;
