@@ -29,11 +29,11 @@ El sitio web cuenta con varias páginas con listados de productos, animaciones, 
 
 ## Capturas de pantalla
 ![1](https://user-images.githubusercontent.com/113878525/198366784-83004bc2-fe1b-48eb-aedb-6b3ca61faf15.png)
-![2](https://user-images.githubusercontent.com/113878525/198366803-142265cb-6a91-4f2f-9e96-b59b41cd5f78.png)
+![2](https://user-images.githubusercontent.com/113878525/198828185-906e6571-a0d9-4c86-8db4-a119e5984cb2.png)
 ![3](https://user-images.githubusercontent.com/113878525/198366831-75417c0e-2348-4bf3-bfad-5686495d6c23.png)
 ![4](https://user-images.githubusercontent.com/113878525/198366854-62699b88-7547-461f-b385-0016fa8a1166.png)
 ![5](https://user-images.githubusercontent.com/113878525/198366865-9711ff57-4359-4f94-867c-0bf13b0cac0e.png)
-![6](https://user-images.githubusercontent.com/113878525/198366873-33c83b75-d24a-48e5-8a3a-916148724e4d.png)
+![6](https://user-images.githubusercontent.com/113878525/198828192-af72a533-6a1f-4c81-aa5d-5112368e9f15.png)
 
 
 
