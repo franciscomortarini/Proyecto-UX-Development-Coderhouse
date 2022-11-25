@@ -83,22 +83,68 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Buscar
-            </button>
           </form>
         </div>
       </nav>
+
+      <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-chat-left-quote"></i> &nbsp; Sus datos</h4>
+            </div>
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Agustín" required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div >
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Pérez" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo Electrónico</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej: aperez@mail.com" required>
+                        <div class="correo text-danger"></div>
+                        
+                    </div> 
+                    <div class="mb-4">
+                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
+                        <input type="radio" class="form-check-input"  name="sexo"  value="masculino" > Masculino
+                        <input type="radio" class="form-check-input" name="sexo"  value="femenino" > Femenino
+                        <div class="sexo text-danger"></div>
+                    </div>  
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="ej: hola"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="mb-2">
+                        <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                    <p>Estoy de acuerdo con los <a href="contextra/termycon.html" target="_blank"> Términos y Condiciones</a></p>
+                    <p><a href="#">Ya tengo Cuenta</a></p>
+                       
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+  </div>
+
     </header>
 
+    
     <main>
-      <h2>Dónde encontrarnos</h2>
+      <h1>Dónde encontrarnos</h1>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13142.216596061393!2d-58.4388262!3d-34.5648424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x50ace108b845c9d2!2sLibreria%20Las%20Ca%C3%B1itas!5e0!3m2!1ses-419!2ses!4v1666890204139!5m2!1ses-419!2ses"
         width="600"
