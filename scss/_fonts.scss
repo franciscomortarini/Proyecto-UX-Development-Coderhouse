@@ -1,9 +1,10 @@
 //Fuentes y textos// 
 
-h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: $color-blanco ;
-    position: relative;
-    text-align: center;
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-size: cover;
+    background-position:center;
+    padding: 0 8%;
 }
 
 h2 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,8 +14,40 @@ h2 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida
     text-align: center;
 }
 
+h3 {
+
+    font-family:'Courier New', Courier, monospace;
+    background-size: cover;
+    background-position:center;
+    padding: 0 8%;
+}
+
 p{
-    background:rgb(215, 179, 158);
     position: relative;
     text-align: center;
+}
+
+.text-box{
+color: #ffff ;
+position:absolute;
+bottom:8%;
+}
+
+.text-box p{
+font-size: 50px;
+font-weight:600;
+}
+
+.text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+}
+
+.text-box h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    line-height: 400px;
+    margin-top:-200px;
+    margin-left: 1200px;
 }
